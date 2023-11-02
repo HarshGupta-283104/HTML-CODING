@@ -1,0 +1,131 @@
+body{
+    background-color: rgb(242, 243, 228);
+}
+
+div#h1{
+    text-align: center;
+    color: green;
+    background-color: rgb(220, 220, 14);
+    border-radius: 15%;
+}
+table{
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+    text-align: center;
+    text-align: bottom;
+    margin-left: 10%;
+    border-color: black;
+}
+th#gla{
+    background-color: aqua;
+    color: rgb(13, 192, 111);
+    text-transform: uppercase;
+}
+th#branch{
+    background-color: rgb(101, 168, 146);
+    color: rgb(18, 89, 152);
+    text-transform: capitalize;
+}
+tr#bakwaas{
+    background-color: rgb(188, 190, 232);
+    color: rgb(186, 115, 28);
+}
+th#INSTITUTE{
+    background-color: rgb(170, 159, 115);
+    text-transform: capitalize;
+}
+tr#inf{
+    background-color: rgb(74, 119, 46);
+}
+td#time{
+    background-color: rgb(15, 61, 16);
+    color: rgb(126, 190, 246);
+}
+td#cs{
+background-color: rgb(59, 190, 114);
+text-decoration: rgb(123, 70, 4);
+}
+td#cs1{
+    background-color: azure;
+    color:  black;
+}
+td#cs2{
+    background-color: rgb(119, 87, 194);
+}
+td#english{
+    background-color: rgb(19, 60, 46);
+    color: rgb(255, 255, 255);
+}
+td#physics{
+    background-color: rgb(124, 195, 172);
+    color: rgb(112, 77, 77);
+}
+td{
+    color: rgb(16, 31, 240);
+    border-radius: 10%;
+    background-color: rgb(192, 216, 195);
+    border: 5px;
+    border-color: rgb(4, 23, 23);
+}
+th.serial{
+    color: rgb(161, 111, 208);
+    background-color: rgb(229, 206, 176.9);
+}
+th#Lecture{
+    background-color: aquamarine;
+}
+div.table{
+    border: 5px;
+    margin-right: 85px;
+    padding: 25px;
+    align-items:center;
+    box-sizing: border-box;
+    border-color: red;
+
+}
+
+table#table2{
+    margin-left:25%, 25%;
+    border-color: rgb(36, 59, 36);
+
+}
+
+td#faculty{
+    text-transform: capitalize;
+}
+
+td#Subject{
+    text-transform: capitalize;
+}
+
+th#heading{
+    background-color: bisque;
+    color: rgb(45, 45, 136);
+}
+td#p1{
+    background-color: beige;
+    color: rgb(14, 98, 98);
+}
+
+td#math{
+    background-color: rgb(118, 202, 202);
+    color: rebeccapurple;
+}
+
+td#cs5{
+    background-color: blueviolet;
+    color: bisque;
+}
+
+td#dt{
+    background-color: rgb(32, 174, 82);
+    color: blueviolet;
+}
+
+div#h2{
+    text-align: center;
+    color: rgb(177, 186, 177);
+    background-color: rgb(104, 104, 56);
+    border-radius: 15%;
+}

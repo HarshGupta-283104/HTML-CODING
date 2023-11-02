@@ -1,0 +1,70 @@
+<!-- Develop a Web page tha ask the user to input a number and display the table of that number in table format.
+Follow the following constraints:
+a) Entered number should be checked for correct format
+b) Use Css to mkake the background color of the alternate rows to be different 
+c) The table should be displayed in the center of the web page 
+d) Each row should be displyed after 1 seconds -->
+
+<html>
+
+<head>
+    <style>
+        *{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: auto;
+        }
+         table{
+            border-collapse:collapse;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 50%;
+            height: 30%;
+        }
+            </style>
+    <script type="text/javascript">
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+
+        async function xyz() {
+            var str = document.getElementById("num").value;
+            var num = parseInt(str);
+            var phoneno = /^[0-9]+$/;
+            document.getElementById("result").innerHTML = "";
+            if (str.match(phoneno)) {
+                for (i = 1; i <= 10; i++) {
+                    await sleep(1000);
+
+                    if(i%2==0){
+                    document.getElementById("result").innerHTML += "<tr bgcolor=white><td>" + num + "</td><td>*</td><td>" + i +
+                        "</td><td>=</td><td>" + num * i + "</td></tr>";
+                    }
+                        else
+                        {
+                        document.getElementById("result").innerHTML += "<tr bgcolor=lightgrey><td>" + num + "</td><td>*</td><td>" + i +
+                            "</td><td>=</td><td>" + num * i + "</td></tr>";
+                        }
+
+
+                }
+            }
+            else {
+                alert(" Wrong input");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    Enter a number<input type=text name=t1 id=num>
+    <input type=button value="Show Table" onclick=xyz()>
+    <table border=1 id=result>
+    </table>
+</body>
+
+</html>

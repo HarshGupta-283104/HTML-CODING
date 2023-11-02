@@ -1,0 +1,69 @@
+<html>
+<head>
+<style>
+table{
+    margin:auto;
+}
+</style>
+<script>
+function validate(){
+var a=document.getElementById("pass").value;
+var b=document.getElementById("cpass").value;
+var c=document.getElementById("mob").value;
+var d=document.getElementById("name").value;
+var regName =  /.*[A-Z].*[a-z].*/;
+if (a!=b)
+{
+alert("password are not matching");
+return false;
+}
+else if (!d.match(regName))
+{
+alert("Your name dosent have any capital letter");
+return false;
+}
+else if(c.length!=10)
+{
+alert("mobile number is incorrect");
+return false;
+}
+else if (a.length!=6){
+            alert("The password should be of the 6 digit.");
+        return false;
+}
+else{
+return true;
+}
+}
+</script>
+</head>
+<body><br><br>
+<form>
+<table border=2>
+<tr>
+<th>Username</th>
+<th><input type="text" name="t1" id="name" required></th>
+</tr>
+<tr>
+<th>Mobile number</th>
+<th ><input type="tel" name="t1" required id="mob"></th>
+</tr>
+<tr>
+<th>Password</th>
+<th><input type="password" name="t1" required id="pass"></th>
+</tr>
+<tr>
+<th>Confirm password</th>
+<th ><input type="password" name="t1" required id="cpass"></th>
+</tr>
+<tr>
+<th>Date Of Birth</th>
+<th ><input type="date" name="t1" id="dob"></th>
+</tr>
+<tr>
+<th colspan="2"><input type="submit" onclick="return validate()" value="ok" ></th>
+</tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- This link tag use for linking the font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<!-- This link tag use for the liking the stylesheet -->
+    <link rel="stylesheet" href="css for form.css" type="text/css">
+</head>
+<body>
+    <div id="h1"><h1>Registration Form</h1></div>
+    <div class="form-style-5">
+        <form method="get">
+            <!-- fieldset is use for making the sets of field -->
+            <fieldset>
+                <!-- Legend use for define the tittle for child content that means small content -->
+                    <legend>
+                        <span class="number">1</span>
+                        Candidate info
+                    </legend>
+                <input type="text" name="field1" placeholder="Your First Name" required><br>
+                <input type="text"name="field2" placeholder="Your Last Name" required><br>
+                <label for="date">You date of birth:-</label>&nbsp;&nbsp;&nbsp;<input type="date"name="field2" placeholder="date of birth"><br>
+                <label for="Interest" id="yhobbies">Gender:</label>
+               <table id="Hobbies">
+                <!-- Here i am using the table tag to make the content in column -->
+                <tr>
+                    <td>
+                        <input type="radio" name="dd">Male
+                    </td>
+                    <td>
+                        <input type="radio" name="dd">Female
+                    </td>
+                    <td>
+                        <input type="radio" name="dd">Other
+                    </td>
+                </tr>
+               </table> <br>
+                <input type="text"name="field3" placeholder="Your Mobile Number" required><br>
+                <input type="text" name="field4" placeholder="Your father's Name" required><br>
+                <label for="occupation">Father occupation: </label>
+                <select name="Fater occupation" id="occupation" required><br>
+                    <option value="None">-:None:-</option>
+                    <option value="Farmer">Farmer </option>
+                    <option value="Buisnessman">Buisnessman</option>
+                    <option value="Goverment Job">Goverment Job</option>
+                    <option value="Private Job">Private Job</option>
+                    <option value="Other">Other</option>
+                </select><br>
+                <input type="text" name="Mother Name" placeholder="Your Mother Name" required><br>
+                <label for="occupation">Mother Occupation: </label>&nbsp;
+                <select name="Mother occupation" id="occupation" required>
+                    <option value="None">-:None:-</option>
+                    <option value="House Wife">House Wife</option>
+                    <option value="Farmer">Farmer </option>
+                    <option value="Buisnessman">Buisnessman</option>
+                    <option value="Goverment Job">Goverment Job</option>
+                    <option value="Private Job">Private Job</option>
+                    <option value="Other">Other</option>: 
+                </select><br>
+                <input type="email" placeholder="Your Email" required><br>
+                <input type="text" placeholder="Higher Qualification" required><br>
+                <label for="Interest" id="yhobbies">Preferred programming Language:</label>
+               <table id="Hobbies">
+                <!-- Here i am using the table tag to make the content in column -->
+                <tr>
+                    <td>
+                        <input type="checkbox">JAVA
+                    </td>
+                    <td>
+                        <input type="checkbox">Python
+                    </td>
+                    <td>
+                        <input type="checkbox">C++
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">C
+                    </td>
+                    <td>
+                        <input type="checkbox">React
+                    </td>
+                    <td>
+                        <input type="checkbox">PHP
+                    </td>
+                </tr>
+               </table>
+                <label for="Interest" id="yhobbies">Language Known:</label>
+               <table id="Hobbies">
+                <!-- Here i am using the table tag to make the content in column -->
+                <tr>
+                    <td>
+                        <input type="checkbox">English
+                    </td>
+                    <td>
+                        <input type="checkbox">Hindi
+                    </td>
+                    <td>
+                        <input type="checkbox">Tamil
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">Telugu
+                    </td>
+                    <td>
+                        <input type="checkbox">Punjabi
+                    </td>
+                    <td>
+                        <input type="checkbox">Bengali
+                    </td>
+                </tr>
+               </table>
+            </fieldset>
+            </fieldset><br>
+            <!-- here the next fieldset starts -->
+            <fieldset>
+                <legend><span class="number">2</span>
+                    Additional Iformantion
+                </legend>
+                <textarea type="text" name="field4" placeholder="About Yourself" cols="50" rows="25" required></textarea> 
+                </fieldset><br>
+            <button id="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

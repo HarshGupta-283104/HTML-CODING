@@ -1,0 +1,41 @@
+<html><head>
+    <script>
+    function changeImage() {
+        var image = document.getElementById('myImage');
+        if (image.src.match("on")) {
+            image.src = "off bulb.png";
+        } else {
+            image.src = "on bulb.png";
+        }
+    }
+    var str=prompt("Enter a number","10");
+        var f=1;
+        var num=parseInt(str);
+        for(i=num;i>0;i--)
+        {
+            f=f*i;
+        }
+        document.write("The factorial of "+num+" is "+f);
+    </script>
+    </head>
+    <body>
+    <h1>Click the bulb for ON/OFF</h1>
+    <center><img id="myImage" onclick="changeImage()" src="off bulb.png" width="100" height="180">
+    </center>
+    </body>
+    </html>
+    <!-- <html>
+<head></head>
+<body>
+<script type="text/javascript">
+var str=prompt("Enter a number","10");
+var f=1;
+var num=parseInt(str);
+for(i=num;i>0;i--)
+{
+	f=f*i;
+}
+document.write("The factorial of "+num+" is "+f);
+</script>
+</body>
+</html> -->

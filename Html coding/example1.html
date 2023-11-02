@@ -1,0 +1,38 @@
+<!-- <html>
+<head>
+<script type="text/javascript">
+  function test () {
+    alert(" The image clicked");
+  }
+</script>
+</head>
+
+<body>
+  <img src="clickme.jpg" onclick="test()" />
+</body>
+</html> -->
+
+<html>
+<head>
+    <title>Image Click Example</title>
+</head>
+<body>
+    <img id="myImage" src="initial-image.jpg" alt="Click me to change">
+    <script >
+      // Get a reference to the image element by its ID
+var image = document.getElementById("myImage");
+
+// Array of image sources to cycle through
+var imageSources = ["images for home pages/img1.jpeg", "images for home pages/img2.jpg", "images for home pages/img3.jpeg"];
+var currentIndex = 0;
+
+// Add a click event listener to the image element
+image.addEventListener("click", function () {
+    // Change the image source to the next one in the array
+    currentIndex = (1 + 1) % imageSources.length;
+    image.src = imageSources[1];
+});
+
+    </script>
+</body>
+</html>

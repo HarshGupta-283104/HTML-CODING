@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: rgb(151, 134, 60);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        textarea{
+            width: 300px;
+            height: 50px;
+            border: 5px;
+            background-color: rgb(240, 232, 206);
+            color:rgb(238, 155, 31);
+            text-align: right;
+        }
+        #calculator{
+            background-color: rgb(237, 216, 143);
+            width: 300px;
+            height: 200px;
+            padding: 4% 4% 4% 4%;
+            margin: 5% 15% 0% 25%;
+            overflow: hidden;
+        }
+        table{
+            background-color:rgb(250, 247, 235); ;
+            width: 300px;
+            height: 200px;
+            
+        }
+        th{
+            size: 50px;
+        }
+        div{
+            background-color: antiquewhite;
+            width: 300px;
+            border-radius: 20px;
+            margin: 7% 0% 0% 29%;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            color: rgb(129, 89, 89);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+        button{
+            background-color: rgb(197, 122, 24);
+            color: rgb(239, 211, 172);
+            border-radius: 50Px;
+            border-color: le;
+        }
+    </style>
+    <script>
+        function display(x){
+            document.getElementById("display").innerHTML +=x;
+        }
+        function answer(){
+            var value=document.getElementById("display").innerHTML;
+            var value2=eval(value);
+            var value=document.getElementById("display").innerHTML=value2;
+        }
+        function clear(){
+            document.getElementById("display").innerHTML;
+        }
+    </script>
+    
+</head>
+<body>
+    <div id="heading"><h1>Calculator</h1></div>
+    <div id="calculator">
+        <table border="3">
+            <tr>
+                <td colspan="4"><textarea name="t1" id="display" disabled></textarea></td>
+            </tr>
+            <tr>
+                <th>
+                    <button onclick="display('7')">7</button>
+                </th>
+                <th>
+                <button onclick="display('8')">8</button>
+                </th>
+                <th>
+                    <button onclick="display('9')">9</button>
+                </th>
+                <th>
+                    <button onclick="display('*')">*</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button onclick="display('4')">4</button>
+                </th>
+                <th>
+                    <button onclick="display('5')">5</button>
+                </th>
+                <th>
+                    <button onclick="display('6')">6</button>
+                </th>
+                <th>
+                    <button onclick="display('+')">+</button>
+                </th>
+            </tr>
+            <tr>
+               <th>
+                <button onclick="display('1')">1</button>
+               </th>
+               <th>
+                <button onclick="display('2')">2</button>
+               </th>
+               <th>
+                <button onclick="display('3')">3</button>
+               </th>
+               <th>
+                <button onclick="display('-')">-</button>
+               </th>
+            </tr>
+            <tr>
+                <th>
+                    <button onclick="display('0')">0</button>
+                </th>
+                <th>
+                    <button onclick="clear()">AC</button>
+                </th>
+                <th>
+                    <button onclick="answer()">=</button>
+                </th>
+                <th>
+                    <button onclick="display('/')">/</button>
+                </th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

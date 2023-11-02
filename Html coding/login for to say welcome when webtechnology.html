@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the largest numbers </title>
+    <script>
+        function answer(){
+            var a= document.getElementById("first").value;
+            var b= document.getElementById("second").value;
+            if(a=="Web" && b=="Technology")
+            {
+                document.getElementById("ans").innerHTML="Welcome's You";
+            }
+            else{
+                document.getElementById("ans").innerHTML="Sorry, you entered something different that I am expecting";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>
+        Enter Your name:-
+    </h3>
+    <input type="tel" name="number1" id="first"><br><br>
+    <h3>
+        Enter the Password:-
+    </h3>
+    <input type="password" id="second" name="number2"><br><br>
+    <p id="ans"></p>
+    <input type="submit"  onclick="answer()">
+</body>
+</html>

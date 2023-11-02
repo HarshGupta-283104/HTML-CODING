@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+   color: black;
+}
+body, html{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(98, 113, 125);
+}
+ 
+.container{
+    width: 10px;
+    height: 60px;
+    margin: 50%;
+    justify-content: center;
+    text-align: center;
+    padding: 50%;
+    top: 200px;
+    left: 600px;
+    position: relative;
+}
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgb(195, 121, 31);
+    background-color: rgb(70, 53, 12);
+}
+popup{
+    height: 200px;
+    width: 200px;
+    /* position: absolute; */
+    background-color: red;
+    /* z-index: 9999; */
+}

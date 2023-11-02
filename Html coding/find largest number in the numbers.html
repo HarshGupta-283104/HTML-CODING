@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the largest numbers </title>
+    <script>
+        function answer(){
+            var a= document.getElementById("first").value;
+            var b= document.getElementById("second").value;
+            if(a>b)
+            {
+                alert("Highest value is "+ a);
+            }
+            else if(a==b) {
+                alert("Both value are equal "+ a + " and "+ b);
+            }
+            else{
+                alert("Highest value is "+ b);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>
+        Enter the first numbers:-
+    </h3>
+    <input type="tel" name="number1" id="first"><br><br>
+    <h3>
+        Enter the second numbers:-
+    </h3>
+    <input type="tel" id="second" name="number2"><br><br>
+    
+    <input type="submit"  onclick="answer()">
+</body>
+</html>

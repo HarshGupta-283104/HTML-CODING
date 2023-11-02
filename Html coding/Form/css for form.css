@@ -1,0 +1,107 @@
+#h1{
+    border: 5px;
+    border-color: rgb(2, 247, 226);
+    border-radius: 55px 55px 55px 0px;
+    text-align: center;
+    background-color: rgb(124, 167, 153);
+}
+
+
+.form-style-5{
+    max-width: 430px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 8px;
+    font-family: 'Sansita', sans-serif; 
+    content: "";
+    display: block;
+    margin-top: 20px;
+}
+
+.form-style-5{
+    border: none;
+}
+
+.form-style-5 legend{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    border: 10px;
+}
+
+.form-style-5{
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+.form-style-5{
+    max-width: 430px;
+    background: #8e5565;
+    margin: 10px auto;
+    padding: 20px;
+    border: 8px;
+    font-family: 'Sansita', sans-serif; 
+    content: "";
+    display: block;
+    margin-top: 20px;
+}
+
+
+/* Here we can use more selector that you want to select and with the properties like I am selecting the selector by type of input */
+.form-style-5 input[type="text"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 textarea,
+.form-style-5 select{
+    font-family: 'Sansita', sans-serif;
+    background: rgba(155, 240, 230, 5) ;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: rgb(0, 191, 80);
+    -webkit-box-shadow:0 1px rgba(0,0,0,00.03);
+    margin-bottom: 30px;
+}
+
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus {
+    background-color: rgb(80, 137, 187);
+}
+.form-style-5 .number{
+    background-color: rgb(72, 41, 14);
+    height: 28px;
+    width: 33px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 5px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px 12px 15px 0px;
+    text-shadow: 0 1px 0 rgba(12, 13, 0, 51);
+    color: rgb(255, 255, 255);
+}
+
+/* To style the button you can use the button tag. That is easy to style */
+.form-style-5 #button{
+    border: 10px;
+    background-color: rgb(22, 217, 217);
+    width: 400px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 20px;
+
+}
+
+.form-style-5 fielddset{
+    background-color: #7aa588;
+}
+
